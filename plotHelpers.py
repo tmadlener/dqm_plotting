@@ -99,7 +99,7 @@ def _getPositionOnCanvas(pos):
     """
     Get the position from parsing the string
     """
-    from utils.miscHelpers import getPartialMatcher
+    from miscHelpers import getPartialMatcher
     import re
 
     defaultPosition = [0.6, 0.1, 0.9, 0.3]
@@ -279,7 +279,7 @@ def _setupCanvas(can, **kwargs):
     """
     Setup a TCanvas for drawing
     """
-    from utils.miscHelpers import createRandomString
+    from miscHelpers import createRandomString
     from ROOT import TCanvas
     canName = kwargs.pop('name', createRandomString())
 
